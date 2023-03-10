@@ -1,11 +1,11 @@
 {
     "routes": [
       {
-        "src": "/price/(.*)",
+        "src": "/calculCout_api/(.*)",
         "dest": "calculCout_api/index.js"
       },
       {
-        "src": "/api/(.*)",
+        "src": "/calcTemps_api/(.*)",
         "dest": "calcTemps_api/apiCalculTemps.js"
       }
     ]
