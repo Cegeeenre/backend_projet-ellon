@@ -1,0 +1,15 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "/apiCalculTemps.js",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/distance?wsdl",
+            "dest": "apiCalculTemps.js"
+        }
+    ]
+}
