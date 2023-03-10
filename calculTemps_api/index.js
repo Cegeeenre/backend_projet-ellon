@@ -1,7 +1,8 @@
-const soap = require("soap");
-const http = require("http");
-const app = require("express")();
-const cors = require("cors");
+import soap from "soap";
+import http from "http";
+import express from "express";
+import cors from "cors";
+import { readFileSync } from "fs";
 
 const service = {
   DistanceService: {
@@ -27,7 +28,9 @@ const service = {
   },
 };
 
-const wsdl = require("fs").readFileSync("./DistanceService.wsdl", "utf8");
+const wsdl = readFileSync("./DistanceService.wsdl", "utf8");
+
+const app = express();
 
 app.use(cors());
 
