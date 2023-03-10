@@ -1,15 +1,18 @@
 {
     "version": 2,
     "builds": [
-        {
-            "src": "/apiCalculTemps.js",
-            "use": "@vercel/node"
-        }
+      {
+        "src": "/apiCalculTemps.js",
+        "use": "@vercel/node"
+      }
     ],
     "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "apiCalculTemps.js"
-        }
-    ]
+      {
+        "src": "/(.*)",
+        "dest": "apiCalculTemps.js"
+      }
+    ],
+    "env": {
+      "PORT": "8000"
+    }
 }
