@@ -27,7 +27,7 @@ const service = {
   },
 };
 
-const wsdl = require("fs").readFileSync("./calculTemps_api/DistanceService.wsdl", "utf8");
+const wsdl = require("fs").readFileSync("./DistanceService.wsdl", "utf8");
 
 app.use(cors());
 
@@ -38,4 +38,3 @@ app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
 
-export default app;
