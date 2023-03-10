@@ -8,8 +8,8 @@
     ],
     "routes": [
         {
-            "src": "/price/:distance",
-            "dest": "/index.js"
+            "src": "/price/(.*)",
+            "dest": "index.js"
         }
     ]
 }
