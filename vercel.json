@@ -1,0 +1,12 @@
+{
+    "routes": [
+      {
+        "src": "/price/(.*)",
+        "dest": "calculCout_api/index.js"
+      },
+      {
+        "src": "/api/(.*)",
+        "dest": "calcTemps_api/apiCalculTemps.js"
+      }
+    ]
+  }
