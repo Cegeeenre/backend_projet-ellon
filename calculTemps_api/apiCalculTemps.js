@@ -27,7 +27,7 @@ const service = {
   },
 };
 
-const wsdl = require("fs").readFileSync("./api/DistanceService.wsdl", "utf8");
+const wsdl = require("fs").readFileSync("./calculTemps_api/DistanceService.wsdl", "utf8");
 
 app.use(cors());
 
