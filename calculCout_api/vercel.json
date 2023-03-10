@@ -1,0 +1,17 @@
+// loca routes : http://localhost:5001/price/383
+
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "/index.js",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/price/:distance",
+            "dest": "/index.js"
+        }
+    ]
+}
