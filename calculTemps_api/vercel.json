@@ -8,7 +8,7 @@
     ],
     "routes": [
         {
-            "src": "/distance?wsdl",
+            "src": "/(.*)",
             "dest": "apiCalculTemps.js"
         }
     ]
